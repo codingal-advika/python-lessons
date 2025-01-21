@@ -1,3 +1,5 @@
+# Data types
+
 quit1=56
 print(type(quit1))
 ad2=65.5
