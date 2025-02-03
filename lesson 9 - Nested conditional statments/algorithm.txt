@@ -1,0 +1,11 @@
+algorithm;
+
+input from use - 1
+ a)if yes :
+	allowed exam
+else:
+	1)take input from user attendance
+2)if attendance > 75:
+allowed
+else:
+	not allowed
