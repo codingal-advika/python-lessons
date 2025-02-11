@@ -4,4 +4,4 @@ sum = 0
 while start_num <= end_num :
     sum = sum + start_num
     start_num = start_num + 1
-print('Sum = ' ,sum)
+print('Sum = ' ,sum)    
