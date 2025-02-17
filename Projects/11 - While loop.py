@@ -6,5 +6,8 @@ print(inputCount)
 
 while index < inputCount:
     index += 1
+    print(index < inputCount)
 
 print('The number of characters you have entered is ' + str(index))
+
+

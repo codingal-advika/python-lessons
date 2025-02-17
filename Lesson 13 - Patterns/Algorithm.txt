@@ -1,0 +1,5 @@
+1. take an input rows
+2. loop through number of rows
+3. loop through number of columns
+4.print
+5.End
