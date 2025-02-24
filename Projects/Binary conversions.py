@@ -1,4 +1,4 @@
-num = int(input('Enter a number : '))
+num = int(input('Enter a value3 : '))
 binary = "" 
 if num == 0 :
     print('0')
