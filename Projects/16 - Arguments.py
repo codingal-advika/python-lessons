@@ -1,9 +1,13 @@
 import os 
-y  ='yes'
-n = 'no'
-shutdown = input('Would you like to shutdown or not? Enter yes or no: ')
-s = os.system('shutdown/s/t/5')
-if shutdown == y :
+def shutdown_system():
+    y ='yes'
+    n = 'No'
+    userInput = input('Would you like to shutdown or not? Enter yes or no: ')
+    if userInput == y :
+        print('Shutting down the system')
+        os.system('shutdown /s /t 10')
+    else :
+        print('Shutdown cancelled.')
     
-else:
-    print('Shut down cancelled.')
+
+shutdown_system()
