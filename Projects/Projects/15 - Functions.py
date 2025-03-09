@@ -3,12 +3,7 @@ def calculate_circumference (radius) :
     circumference = radius * 2 * pi
     return circumference
 
-userRadius = (input('Enter the radius: '))
-if userRadius.isdigit() != True:
-    print("Please enter a numeric value.")
-    quit()
-r = int(userRadius)
-
+userRadius = int(input('Enter the radius: '))
 if userRadius < 0 :
     print('Enter a value greater than 0.')
 else :
