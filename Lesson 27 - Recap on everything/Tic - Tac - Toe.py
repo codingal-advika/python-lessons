@@ -1,6 +1,6 @@
 Board = {'1': '' , '2': '' , '3': '' ,
          '4': '' , '5': '' , '6': '' ,
-        '7': '' ,'8': '' , '9': '' }
+         '7': '' ,'8': '' , '9': '' }
 board_keys = []
 
 for key in Board:
@@ -15,20 +15,22 @@ def printBoard(b):
 
 
 def Tic_tac_toe():
-    turn = input('Enter x or 0:')
-    count = ''
+    turn = input('Enter x or 0: ')
+    count = 0
     if turn.lower() == 'x':
-        turn = 0
+        turn = '0'
     else:
         turn = 'x'
     for i in range(10) :
         printBoard(Board)
-        print('Its your turn!' + turn + 'Where do you want to move?')
+        print('Its your turn!' + turn + ' Where do you want to move?')
         move = input('Type a number from the grid: ')
         if Board[move] == '':
             Board [move] = turn
+            count  = count+1
         else:
             ('That place has already been filled pleace enter another number')    
+            continue
         if count >=5:
             if Board['1'] == Board['2'] == Board['3'] != '' :
                 printBoard(Board)
@@ -73,13 +75,16 @@ def Tic_tac_toe():
         if count == 9:
             print('It is a tie!')   
 
-        if turn == 'x' or 'X':
-            turn == '0'
+        if turn == 'x':
+            turn = '0'
         else:
-            turn == 'x' or 'X'
+            turn = 'x'
 
     restart = input('Do you want to play again? yes or no:')
     if restart == 'yes' or restart == 'Yes':
         for key in board_keys:
             Board[key] = ''
         Tic_tac_toe()
+
+if __name__ == '__main__' :
+    Tic_tac_toe()
