@@ -1,4 +1,12 @@
-user = int(input('Enter a number that is ODD: '))
-list1 = [1, 3, 5, 7, 9, 11, 13, 15, 17,19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 
-        53,55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77,79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99]
+input_value = int(input('Enter a number: '))
+numbers_list = list(range(input_value))
+odd_numbers_list = [num for num in numbers_list if num % 2 != 0]
+print('List of all numbers between the number you have entered is:', numbers_list)
+print("List of odd numbers:", odd_numbers_list)
+#2) Create a list of fruits
+fruits = ['apple', 'banana', 'cherry', 'date', 'fig']
+print(fruits)
+print('Now lets convert the starting letter off these fruits to a capital letter')
+updated_fruits = [fruit.capitalize() for fruit in fruits]
+print('Updated list of fruits:', updated_fruits)
 
