@@ -6,4 +6,4 @@ class Vehicle:
 class Bus(Vehicle):
     pass
 school_bus = Bus('School Volvo' , 180 , 12)
-print('Vehicle Name:' , school_bus.name  ,school_bus.max_speed  ,'Mileage:' , school_bus.mileage)
+print('Vehicle Name:' , school_bus.name  ,school_bus.max_speed  ,'Mileage:' , school_bus.mileage)   
