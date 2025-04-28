@@ -1,15 +1,4 @@
-'''Identify the radius (r) of the circle.
-Square the radius (r²).
-Multiply the squared radius by π (approximately 3.14).
-The result is the area of the circle'''
-'''Steps:
-Identify the radius of the circle. For example, let’s say the radius is 5 cm.
-Multiply the radius by 2. 
-2*5=10
-Multiply the result by10 π (pi). 3.14159
-≈
-31.42'''
-print('This code is to only try out the radius of whole numbers.')
+print('This code is to only try out the radius of whole numbers')
 class circle :
     def __init__(self , radius):
         self.radius = radius
