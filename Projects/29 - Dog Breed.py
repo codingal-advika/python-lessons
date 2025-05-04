@@ -9,7 +9,7 @@ class Dog:
         print(f"Color: {self.color}")
         print(f"Size: {self.size}")
         print(f"Attitude: {self.attitude}")
-        print("-" * 30)
+        print("-" * 50)
 dog1 = Dog("Pomeranian", "White", "Small" , "Loyal , Playful")
 dog2 = Dog("Golden Retriever", "Golden", "Large" , "Friendly")
 
